@@ -27,12 +27,9 @@ body {
 
   position: relative;
 
-  text-transform: uppercase;
-
-  background: url('../img/stars-layer.svg'), radial-gradient(circle at bottom, #4b148d, #a641b9);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: $bg-body;
   color: $text-black;
+  font-family: $main-font;
 
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
