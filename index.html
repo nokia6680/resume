@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Резюме | Баллод Артур</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!--Header-->
+	<header class="header">
+		<nav class="header__nav header-nav">
+			<div class="header-nav__logo">
+				<a class="header-nav__link" href="#" target="_self">
+					<img class="header-nav__img" src="img/main-logo.png" alt="CSSSR Логотип" />
+				</a>
+			</div>
+			<img class="header-nav__secret" src="img/top-secret.png" alt="Совершенно секретно" />
+		</nav>
+	</header>
+	<!--Main part-->
+	<main class="main">
+		<div class="main__intro main-intro">
+			<h1 class="main-intro__title"><span class="visually-hidden">Дело</span></h1>
+		</div>
+		<!--Блок личной информации-->
+		<section class="main__info main-info">
+			<h2 class="visually-hidden">Заполните все поля личных данных!</h2>
+			<form class="main-info__form info-form" method="post" action="#">
+				<ul class="info-form__list form-list">
+					<li class="form-list__item form-item">
+						<label class="form-item__label" for="name">Полное ФИО</label>
+						<input class="form-item__input" type="text" name="name" id="name" value="Баллод Артур Андреевич" disabled />
+					</li>
+					<li class="form-list__item form-item">
+						<label class="form-item__label" for="date">Год рождения</label>
+						<input class="form-item__input" type="number" name="date" id="date" value="1989" disabled />
+					</li>
+					<li class="form-list__item form-item">
+						<label class="form-item__label" for="place">Место жительства</label>
+						<input class="form-item__input" type="text" name="place" id="place" value="г. Калининград, РФ" disabled />
+					</li>
+					<li class="form-list__item form-item">
+						<label class="form-item__label" for="skype">Скайп</label>
+						<input class="form-item__input" type="text" name="skype" id="skype" value="artur.ballod" disabled />
+					</li>
+					<li class="form-list__item form-item">
+						<label class="form-item__label" for="email">Почта</label>
+						<input class="form-item__input" type="email" name="email" id="email" value="artur.ballod@gmail.com" disabled />
+					</li>
+				</ul>
+				<!--Кнопка сохранения информации-->
+				<button class="info-form__submit visually-hidden" type="submit">Сохранить</button>
+			</form>
+		</section>
+		<!--Блок информации о стеке технологий-->
+		<section class="main__tech main-tech">
+			<h2 class="main-tech__title">Расскажите о себе чекбоксами</h2>
+			<p class="main-tech__description">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+			<!--Форма для чекбоксов-->
+			<form class="main-tech__form tech-form">
+				<ul class="tech-form__list tech-item">
+					<!--Первый столбец-->
+					<li class="tech-list__item tech-item tech-list__item--first">
+						<ul class="tech-item__list inner-list">
+							<!--BEM-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--bem visually-hidden" type="checkbox" name="bem" id="bem" />
+								<label class="inner-item__label" for="bem">БЭМ/OOCSS</label>
+							</li>
+							<!--PUG(Jade)-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--pug visually-hidden" type="checkbox" name="pug" id="pug" />
+								<label class="inner-item__label" for="pug">Pug&nbsp;(Jade)</label>
+							</li>
+							<!--Stylus/LESS/SASS-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--preproc visually-hidden" type="checkbox" name="preproc" id="preproc" />
+								<label class="inner-item__label" for="preproc">Stylus/LESS/SASS</label>
+							</li>
+							<!--SVG-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--svg visually-hidden" type="checkbox" name="svg" id="svg" />
+								<label class="inner-item__label" for="svg">Работаю с SVG</label>
+							</li>
+							<!--Semantics-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--semantics visually-hidden" type="checkbox" name="semantics" id="semantics" />
+								<label class="inner-item__label" for="semantics">Верстаю семантично</label>
+							</li>
+							<!--Accessibility-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--access visually-hidden" type="checkbox" name="access" id="access" />
+								<label class="inner-item__label" for="access">Accessibility(A11Y)</label>
+							</li>
+							<!--ES2015/ES2016-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--es visually-hidden" type="checkbox" name="es" id="es" />
+								<label class="inner-item__label" for="es">ES2015/ES2016</label>
+							</li>
+						</ul>
+					</li>
+					<!--Второй столбец-->
+					<li class="tech-list__item tech-item tech-list__item--second">
+						<ul class="tech-item__list inner-list">
+							<!--Сборщик-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--gulp visually-hidden" type="checkbox" name="gulp" id="gulp" />
+								<label class="inner-item__label" for="gulp">Gulp/GRUNT</label>
+							</li>
+							<!--Webpack-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--webp visually-hidden" type="checkbox" name="webp" id="webp" />
+								<label class="inner-item__label" for="webp">Webpack</label>
+							</li>
+							<!--WebGL-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--webgl visually-hidden" type="checkbox" name="webgl" id="webgl" />
+								<label class="inner-item__label" for="webgl">Дружу с WebGL</label>
+							</li>
+							<!--jQuery-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--jquery visually-hidden" type="checkbox" name="jquery" id="jquery" />
+								<label class="inner-item__label" for="jquery">jQuery</label>
+							</li>
+							<!--Angular-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--angular visually-hidden" type="checkbox" name="angular" id="angular" />
+								<label class="inner-item__label" for="angular">Знаю/изучаю Angular</label>
+							</li>
+							<!--React-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--react visually-hidden" type="checkbox" name="react" id="react" />
+								<label class="inner-item__label" for="react">Знаю/изучаю React</label>
+							</li>
+							<!--Node.js-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--node visually-hidden" type="checkbox" name="node" id="node" />
+								<label class="inner-item__label" for="node">Знаю/изучаю Node.js</label>
+							</li>
+						</ul>
+					</li>
+					<!--Третий столбец-->
+					<li class="tech-list__item tech-item tech-list__item--third">
+						<ul class="tech-item__list inner-list">
+							<!--Git-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--git visually-hidden" type="checkbox" name="git" id="git" />
+								<label class="inner-item__label" for="git">Использую Git</label>
+							</li>
+							<!--Eyes-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--eyes visually-hidden" type="checkbox" name="eyes" id="eyes" />
+								<label class="inner-item__label" for="eyes">С глазомером всё ок</label>
+							</li>
+							<!--Reading-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--blog visually-hidden" type="checkbox" name="blog" id="blog" />
+								<label class="inner-item__label" for="blog">Читаю<a class="inner-item__link" href="http://blog.csssr.ru/">blog.csssr.ru</a></label>
+							</li>
+							<!--Lazyness-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--lazy visually-hidden" type="checkbox" name="lazy" id="lazy" />
+								<label class="inner-item__label" for="lazy">Я ленивый(-ая)</label>
+							</li>
+							<!--English-->
+							<li class="inner-list__item inner-item">
+								<input class="inner-item__input inner-item__input--eng visually-hidden" type="checkbox" name="eng" id="eng" />
+								<label class="inner-item__label" for="eng">У меня хороший английский</label>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</form>
+		</section>
+		<!--Блок информации об уровнее владения JS-->
+		<section class="main__level main-level">
+			<h2 class="main-level__title">Уровень владения JavaScript</h2>
+			<!--SLIDER-->
+
+		</section>
+		<!--Блок информации о себе словами-->
+		<section class="main__about main-about">
+			<h2 class="main-about__title">Расскажите о себе словами</h2>
+			<p class="main-about__description">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</p>
+			<form class="main-about__form about-form" method="post" action="#">
+				<textarea class="about-form__textarea" rows="1" name="about-me" placeholder="Расскажите о себе">
+					Говно понос
+				</textarea>
+				<button class="about-form__submit visually-hidden" type="submit">Сохранить</button>
+			</form>
+		</section>
+		<!--Блок информации о планах-->
+		<section class="main__plans main-plans">
+			<h2 class="main-plans__title">Какие у вас планы на будущее?</h2>
+			<p class="main-plans__description">Этот ответ ни на что не влияет. Не беда, если в будущем ваши планы поменяются.</p>
+			<form class="main-plans__form plans-form" method="post" action="#">
+				<ul class="plans-form__list plans-list">
+					<li class="plans-list__item plans-item plans-list__item--develop">
+						<input class="plans-item__input visually-hidden" type="radio" name="plan" value="develop" id="dev"/>
+						<label class="plans-item__label" for="dev">Верстать</label>
+					</li>
+					<li class="plans-list__item plans-item plans-list__item--js">
+						<input class="plans-item__input visually-hidden" type="radio" name="plan" value="js" id="js"/>
+						<label class="plans-item__label" for="js">Прокачиваться в JS</label>
+					</li>
+					<li class="plans-list__item plans-item plans-list__item--manager">
+						<input class="plans-item__input visually-hidden" type="radio" name="plan" value="manager" id="manager"/>
+						<label class="plans-item__label" for="manager">Менеджерство</label>
+					</li>
+					<li class="plans-list__item plans-item plans-list__item--other">
+						<input class="plans-item__input visually-hidden" type="radio" name="plan" value="other" id="other"/>
+						<label class="plans-item__label" for="other">Другое</label>
+					</li>
+				</ul>
+			</form>
+		</section>
+	</main>
+	<!--Footer-->
+	<footer class="footer">
+		<!--Блок даты-->
+		<section class="footer__date footer-date">
+			<h2 class="footer-date__title visually-hidden">Введите дату заполнения дела</h2>
+			<form class="footer-date__form date-form" method="post" action="#">
+				<label class="date-form__label" for="date">Дата заполнения</label>
+				<input class="date-form__input" type="date" name="date" id="date" value="2019-01-17" disabled/>
+			</form>
+		</section>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+</html>
