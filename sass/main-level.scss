@@ -1,0 +1,57 @@
+.main-level {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding-bottom: 41px;
+
+  &__title {
+    @extend .main-tech__title;
+
+    margin-bottom: 47px;
+  }
+
+  &__slider {
+    width: 100%;
+  }
+
+  .ui-slider,
+  .ui-slider-horizontal,
+  .ui-widget {
+    border: none;
+    outline: none;
+  }
+
+  .ui-widget-content {
+    background-color: transparent;
+    border: none !important;
+    outline: none;
+
+    background-image: url('../img/other-underline.png');
+    background-size: 768px 4px;
+    background-repeat: no-repeat;
+
+    height: 4px;
+  }
+
+  .ui-state-default,
+  .ui-widget-content .ui-state-default {
+    background: transparent !important;
+    border: none;
+
+    width: 17px;
+    height: 14px;
+
+    top: -16px;
+
+    background-image: url('../img/slider-handle.png') !important;
+    background-size: 17px 14px;
+    background-repeat: no-repeat;
+
+    outline: none;
+    cursor: pointer;
+  }
+}

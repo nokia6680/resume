@@ -1,0 +1,102 @@
+.level-list {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  padding-top: 30px;
+
+  &__item--first {
+    width: 145px;
+    text-align: left;
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      top: -32px;
+      left: 0;
+
+      width: 3px;
+      height: 25px;
+
+      background-image: url('../img/long-spear.png');
+      background-repeat: no-repeat;
+      background-size: 3px 25px;
+    }
+  }
+
+  &__item--second {
+    width: 227px;
+    text-align: left;
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      top: -32px;
+      left: 3px;
+
+      width: 3px;
+      height: 11px;
+
+      background-image: url('../img/short-spear.png');
+      background-repeat: no-repeat;
+      background-size: 3px 11px;
+    }
+  }
+
+  &__item--third {
+    width: 249px;
+    text-align: left;
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      top: -32px;
+      left: 3px;
+
+      width: 3px;
+      height: 11px;
+
+      background-image: url('../img/short-spear.png');
+      background-repeat: no-repeat;
+      background-size: 3px 11px;
+    }
+  }
+
+  &__item--fourth {
+    width: 148px;
+    text-align: right;
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      top: -32px;
+      right: 1px;
+
+      width: 3px;
+      height: 25px;
+
+      background-image: url('../img/long-spear.png');
+      background-repeat: no-repeat;
+      background-size: 3px 25px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.header {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  position: relative;
+
+  padding-bottom: 30px;
+
+  &__logo {
+    width: 154px;
+    height: 52px;
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+
+    outline: none;
+    cursor: pointer;
+
+    text-decoration: none;
+  }
+
+  &__secret {
+    position: absolute;
+
+    top: -22px;
+    right: -64px;
+
+    width: 252px;
+    height: auto;
+  }
+}

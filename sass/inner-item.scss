@@ -1,0 +1,71 @@
+.inner-item {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  &__label {
+    font: {
+      size: 1.313em;
+      family: $main-font;
+      weight: 700;
+    }
+
+    line-height: 25px;
+    color: $text-black;
+  }
+
+  &__label--eyes {
+    position: relative;
+  }
+
+  &__text--first {
+    position: absolute;
+
+    bottom: -1px;
+    right: -97px;
+  }
+
+  &__text--second {
+    position: absolute;
+    bottom: -2px;
+    right: -132px;
+  }
+
+  &__text--third {
+    position: absolute;
+    bottom: -3px;
+    right: -157px;
+  }
+
+  &__link {
+    color: $text-blue;
+  }
+
+  &__input + label {
+    @include checkbox-default;
+
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__input + label::before {
+    @include custom-checkbox;
+  }
+
+  &__input:checked + label::after {
+    @include checkbox-checked;
+  }
+
+  &__input--eng + label::before {
+    @include custom-checkbox-eng;
+  }
+
+  &__input--eng:checked + label::after {
+    @include checkbox-checked-eng;
+  }
+}

@@ -1,0 +1,12 @@
+.level-item {
+  &__text {
+    font: {
+      size: 0.813em;
+      family: $main-font;
+      weight: 700;
+    }
+
+    line-height: 1;
+    color: $text-brown;
+  }
+}

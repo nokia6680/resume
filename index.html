@@ -41,15 +41,15 @@
 				<form class="main-info__form info-form" method="post" action="#">
 					<ul class="info-form__list form-list">
 						<li class="form-list__item form-item">
-							<label class="form-item__label" for="name">Полное ФИО</label>
+							<label class="form-item__label" for="name">Полное&nbsp;ФИО</label>
 							<input class="form-item__input" type="text" name="name" id="name" value="Баллод Артур Андреевич" disabled />
 						</li>
 						<li class="form-list__item form-item">
-							<label class="form-item__label" for="date">Год рождения</label>
+							<label class="form-item__label" for="date">Год&nbsp;рождения</label>
 							<input class="form-item__input" type="number" name="date" id="date" value="1989" disabled />
 						</li>
 						<li class="form-list__item form-item">
-							<label class="form-item__label" for="place">Место жительства</label>
+							<label class="form-item__label" for="place">Место&nbsp;жительства</label>
 							<input class="form-item__input" type="text" name="place" id="place" value="г. Калининград, РФ" disabled />
 						</li>
 						<li class="form-list__item form-item">
@@ -71,43 +71,43 @@
 				<p class="main-tech__description">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
 				<!--Форма для чекбоксов-->
 				<form class="main-tech__form tech-form">
-					<ul class="tech-form__list tech-item">
+					<ul class="tech-form__list tech-list">
 						<!--Первый столбец-->
 						<li class="tech-list__item tech-item tech-list__item--first">
 							<ul class="tech-item__list inner-list">
 								<!--BEM-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--bem visually-hidden" type="checkbox" name="bem" id="bem" />
+									<input class="inner-item__input inner-item__input--bem visually-hidden" type="checkbox" name="bem" id="bem" checked disabled/>
 									<label class="inner-item__label" for="bem">БЭМ/OOCSS</label>
 								</li>
 								<!--PUG(Jade)-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--pug visually-hidden" type="checkbox" name="pug" id="pug" />
+									<input class="inner-item__input inner-item__input--pug visually-hidden" type="checkbox" name="pug" id="pug" disabled />
 									<label class="inner-item__label" for="pug">Pug&nbsp;(Jade)</label>
 								</li>
 								<!--Stylus/LESS/SASS-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--preproc visually-hidden" type="checkbox" name="preproc" id="preproc" />
+									<input class="inner-item__input inner-item__input--preproc visually-hidden" type="checkbox" name="preproc" id="preproc" checked disabled />
 									<label class="inner-item__label" for="preproc">Stylus/LESS/SASS</label>
 								</li>
 								<!--SVG-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--svg visually-hidden" type="checkbox" name="svg" id="svg" />
+									<input class="inner-item__input inner-item__input--svg visually-hidden" type="checkbox" name="svg" id="svg" checked disabled />
 									<label class="inner-item__label" for="svg">Работаю с SVG</label>
 								</li>
 								<!--Semantics-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--semantics visually-hidden" type="checkbox" name="semantics" id="semantics" />
+									<input class="inner-item__input inner-item__input--semantics visually-hidden" type="checkbox" name="semantics" id="semantics" checked disabled/>
 									<label class="inner-item__label" for="semantics">Верстаю семантично</label>
 								</li>
 								<!--Accessibility-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--access visually-hidden" type="checkbox" name="access" id="access" />
+									<input class="inner-item__input inner-item__input--access visually-hidden" type="checkbox" name="access" id="access" checked disabled />
 									<label class="inner-item__label" for="access">Accessibility(A11Y)</label>
 								</li>
 								<!--ES2015/ES2016-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--es visually-hidden" type="checkbox" name="es" id="es" />
+									<input class="inner-item__input inner-item__input--es visually-hidden" type="checkbox" name="es" id="es" disabled />
 									<label class="inner-item__label" for="es">ES2015/ES2016</label>
 								</li>
 							</ul>
@@ -117,37 +117,37 @@
 							<ul class="tech-item__list inner-list">
 								<!--Сборщик-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--gulp visually-hidden" type="checkbox" name="gulp" id="gulp" />
+									<input class="inner-item__input inner-item__input--gulp visually-hidden" type="checkbox" name="gulp" id="gulp" checked disabled />
 									<label class="inner-item__label" for="gulp">Gulp/GRUNT</label>
 								</li>
 								<!--Webpack-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--webp visually-hidden" type="checkbox" name="webp" id="webp" />
+									<input class="inner-item__input inner-item__input--webp visually-hidden" type="checkbox" name="webp" id="webp" disabled />
 									<label class="inner-item__label" for="webp">Webpack</label>
 								</li>
 								<!--WebGL-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--webgl visually-hidden" type="checkbox" name="webgl" id="webgl" />
+									<input class="inner-item__input inner-item__input--webgl visually-hidden" type="checkbox" name="webgl" id="webgl" disabled />
 									<label class="inner-item__label" for="webgl">Дружу с WebGL</label>
 								</li>
 								<!--jQuery-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--jquery visually-hidden" type="checkbox" name="jquery" id="jquery" />
+									<input class="inner-item__input inner-item__input--jquery visually-hidden" type="checkbox" name="jquery" id="jquery" checked disabled />
 									<label class="inner-item__label" for="jquery">jQuery</label>
 								</li>
 								<!--Angular-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--angular visually-hidden" type="checkbox" name="angular" id="angular" />
+									<input class="inner-item__input inner-item__input--angular visually-hidden" type="checkbox" name="angular" id="angular" disabled />
 									<label class="inner-item__label" for="angular">Знаю/изучаю Angular</label>
 								</li>
 								<!--React-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--react visually-hidden" type="checkbox" name="react" id="react" />
+									<input class="inner-item__input inner-item__input--react visually-hidden" type="checkbox" name="react" id="react" disabled />
 									<label class="inner-item__label" for="react">Знаю/изучаю React</label>
 								</li>
 								<!--Node.js-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--node visually-hidden" type="checkbox" name="node" id="node" />
+									<input class="inner-item__input inner-item__input--node visually-hidden" type="checkbox" name="node" id="node" disabled />
 									<label class="inner-item__label" for="node">Знаю/изучаю Node.js</label>
 								</li>
 							</ul>
@@ -157,27 +157,27 @@
 							<ul class="tech-item__list inner-list">
 								<!--Git-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--git visually-hidden" type="checkbox" name="git" id="git" />
+									<input class="inner-item__input inner-item__input--git visually-hidden" type="checkbox" name="git" id="git" checked disabled />
 									<label class="inner-item__label" for="git">Использую Git</label>
 								</li>
 								<!--Eyes-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--eyes visually-hidden" type="checkbox" name="eyes" id="eyes" />
-									<label class="inner-item__label" for="eyes">С глазомером всё ок</label>
+									<input class="inner-item__input inner-item__input--eyes visually-hidden" type="checkbox" name="eyes" id="eyes" checked disabled />
+									<label class="inner-item__label inner-item__label--eyes" for="eyes">С <span class="inner-item__text--first">глазомером</span>&nbsp;<span class="inner-item__text--second">всё</span>&nbsp;<span class="inner-item__text--third">ок</span></label>
 								</li>
 								<!--Reading-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--blog visually-hidden" type="checkbox" name="blog" id="blog" />
-									<label class="inner-item__label" for="blog">Читаю<a class="inner-item__link" href="http://blog.csssr.ru/">blog.csssr.ru</a></label>
+									<input class="inner-item__input inner-item__input--blog visually-hidden" type="checkbox" name="blog" id="blog" checked disabled />
+									<label class="inner-item__label" for="blog">Читаю&nbsp;<a class="inner-item__link" href="http://blog.csssr.ru/">blog.csssr.ru</a></label>
 								</li>
 								<!--Lazyness-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--lazy visually-hidden" type="checkbox" name="lazy" id="lazy" />
+									<input class="inner-item__input inner-item__input--lazy visually-hidden" type="checkbox" name="lazy" id="lazy" disabled />
 									<label class="inner-item__label" for="lazy">Я ленивый(-ая)</label>
 								</li>
 								<!--English-->
 								<li class="inner-list__item inner-item">
-									<input class="inner-item__input inner-item__input--eng visually-hidden" type="checkbox" name="eng" id="eng" />
+									<input class="inner-item__input inner-item__input--eng visually-hidden" type="checkbox" name="eng" id="eng" checked disabled />
 									<label class="inner-item__label" for="eng">У меня хороший английский</label>
 								</li>
 							</ul>
@@ -190,7 +190,7 @@
 				<h2 class="main-level__title">Уровень владения JavaScript</h2>
 				<!--SLIDER-range-->
 				<div class="main-level__slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="js-slider">
-					<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 50%;"></span>
+					<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
 				</div>
 				<ul class="main-level__stages level-list">
 					<li class="level-list__item level-item level-list__item--first">
@@ -200,7 +200,7 @@
 						<span class="level-item__text">Использую готовые решения</span>
 					</li>
 					<li class="level-list__item level-item level-list__item--third">
-						<span class="level-item__text">Использую готовые решения и умею их переделывать</span>
+						<span class="level-item__text">Использую готовые решения<br />и умею их переделывать</span>
 					</li>
 					<li class="level-list__item level-item level-list__item--fourth">
 						<span class="level-item__text">Пишу сложный JS с нуля</span>
