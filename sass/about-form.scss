@@ -6,23 +6,23 @@
   justify-content: flex-start;
   align-items: flex-start;
 
+  position: relative;
+
   &__tech {
     position: relative;
     width: 768px;
-    height: auto;
+    height: 100%;
     white-space: pre-wrap;
     word-wrap: break-word;
-    overflow: hidden;
+    background: transparent;
+    border: none;
 
-    background-attachment: local;
-    background-image: url('../img/text-underline.png');
-    background-repeat: repeat-y;
-    background-size: 768px 60px;
+    color: transparent;
   }
 
   &__textarea {
-    width: 100%;
-
+    width: 768px;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -35,6 +35,11 @@
 
     outline: none;
     cursor: text;
+
+    background-attachment: local;
+    background-image: url('../img/text-underline.png');
+    background-repeat: repeat-y;
+    background-size: 768px 60px;
   }
 
   &__tech,
@@ -47,5 +52,9 @@
 
     color: $text-lightgray;
     line-height: 61px;
+  }
+
+  &__tech {
+    color: transparent;
   }
 }
