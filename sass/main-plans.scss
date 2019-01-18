@@ -1,0 +1,22 @@
+.main-plans {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding-bottom: 85px;
+
+  &__title {
+    @extend .main-tech__title;
+
+    margin-bottom: 18px;
+  }
+
+  &__description {
+    @extend .main-tech__description;
+
+    margin-bottom: 20px;
+  }
+}

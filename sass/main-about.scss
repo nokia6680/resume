@@ -1,0 +1,40 @@
+.main-about {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding-bottom: 58px;
+
+  &__title {
+    @extend .main-tech__title;
+
+    margin-bottom: 23px;
+  }
+
+  &__description {
+    @extend .main-tech__description;
+
+    margin-bottom: 48px;
+  }
+
+  &__technical {
+    width: 770px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+
+    font: {
+      size: 30px;
+      family: $alternate-font;
+      weight: 400;
+    }
+
+    color: $text-lightgray;
+    line-height: 33px;
+  }
+}

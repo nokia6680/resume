@@ -1,0 +1,51 @@
+.about-form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &__tech {
+    position: relative;
+    width: 768px;
+    height: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: hidden;
+
+    background-attachment: local;
+    background-image: url('../img/text-underline.png');
+    background-repeat: repeat-y;
+    background-size: 768px 60px;
+  }
+
+  &__textarea {
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    resize: none;
+    overflow: hidden;
+
+    background: transparent;
+    border: none;
+
+    outline: none;
+    cursor: text;
+  }
+
+  &__tech,
+  &__textarea {
+    font: {
+      size: 30px;
+      family: $alternate-font;
+      weight: 400;
+    }
+
+    color: $text-lightgray;
+    line-height: 61px;
+  }
+}

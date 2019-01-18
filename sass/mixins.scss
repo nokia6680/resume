@@ -36,6 +36,47 @@
   background-repeat: no-repeat;
 }
 
+@mixin radio-default {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+
+  position: relative;
+  padding-left: 33px;
+}
+
+@mixin custom-radio {
+  position: absolute;
+  content: "";
+
+  bottom: 0;
+  left: 0;
+
+  display: block;
+
+  width: 28px;
+  height: 28px;
+
+  background-image: url('../img/radio-empty.png');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+}
+
+@mixin radio-checked {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 8px;
+
+  display: block;
+  width: 12px;
+  height: 12px;
+
+  background-image: url('../img/radio-tick.png');
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+}
+
 @mixin checkbox-default-eng {
   display: inline-block;
   vertical-align: middle;
@@ -72,4 +113,11 @@
   background-image: url('../img/tick.png');
   background-size: 21px 27px;
   background-repeat: no-repeat;
+}
+
+@mixin soft-animation {
+  transition-property: initial;
+  transition-duration: 0.2s;
+  transition-timing-function: initial;
+  transition-delay: initial;
 }

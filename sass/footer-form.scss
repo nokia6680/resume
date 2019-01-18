@@ -1,0 +1,26 @@
+.footer-form {
+  width: 390px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  &__label {
+    @extend .form-item__label;
+  }
+
+  &__input {
+    @extend .form-item__input;
+
+    padding-bottom: 5px;
+    padding-right: 18px;
+    padding-left: 11px;
+
+    background-color: transparent;
+    background-image: url('../img/footer-underline.png');
+    background-size: auto;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+  }
+}
