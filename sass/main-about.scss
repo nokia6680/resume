@@ -11,13 +11,14 @@
   &__title {
     @extend .main-tech__title;
 
-    margin-bottom: 23px;
+    margin-bottom: 15px;
   }
 
   &__description {
     @extend .main-tech__description;
 
     margin-bottom: 48px;
+    margin-left: 2px;
   }
 
   &__technical {

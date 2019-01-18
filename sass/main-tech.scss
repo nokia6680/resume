@@ -6,7 +6,7 @@
   justify-content: flex-start;
   align-items: flex-start;
 
-  padding-bottom: 45px;
+  padding-bottom: 51px;
 
   &__title {
     font: {
@@ -19,7 +19,7 @@
     color: $text-brown;
 
     margin-top: 0;
-    margin-bottom: 18px;
+    margin-bottom: 12px;
   }
 
   &__description {
@@ -33,6 +33,6 @@
     color: $text-gray;
 
     margin-top: 0;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 }
