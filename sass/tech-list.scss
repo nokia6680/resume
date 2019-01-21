@@ -2,25 +2,31 @@
   width: 100%;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
   margin: 0;
   padding: 0;
   list-style: none;
+}
 
-  &__item--first {
-    width: 220px;
-    margin-right: 40px;
-  }
+@media only screen and (min-width: $laptop) {
+  .tech-list {
+    flex-direction: row;
 
-  &__item--second {
-    width: 230px;
-    margin-right: 40px;
-  }
+    &__item--first {
+      width: 220px;
+      margin-right: 40px;
+    }
 
-  &__item--third {
-    width: 220px;
+    &__item--second {
+      width: 230px;
+      margin-right: 40px;
+    }
+
+    &__item--third {
+      width: 220px;
+    }
   }
 }

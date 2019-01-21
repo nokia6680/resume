@@ -4,15 +4,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 
   position: relative;
 
-  padding-bottom: 41px;
+  padding-bottom: 20px;
 
   &__logo {
-    width: 154px;
-    height: 52px;
+    width: 77px;
+    height: 26px;
   }
 
   &__link {
@@ -26,12 +26,29 @@
   }
 
   &__secret {
-    position: absolute;
-
-    top: -14px;
-    right: -57px;
-
-    width: 252px;
+    width: 126px;
     height: auto;
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .header {
+    align-items: flex-start;
+
+    padding-bottom: 41px;
+
+    &__logo {
+      width: 154px;
+      height: 52px;
+    }
+
+    &__secret {
+      position: absolute;
+
+      top: -14px;
+      right: -57px;
+
+      width: 252px;
+    }
   }
 }

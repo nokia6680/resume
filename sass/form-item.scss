@@ -2,9 +2,9 @@
   width: 100%;
 
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   margin-bottom: 15px;
 
@@ -14,7 +14,7 @@
 
   &__label {
     font: {
-      size: 1.402em;
+      size: 1em;
       family: $main-font;
       weight: 700;
     }
@@ -22,7 +22,6 @@
     line-height: 1;
     color: $text-brown;
 
-    margin-right: 15px;
     padding-bottom: 2px;
   }
 
@@ -30,7 +29,7 @@
     width: 100%;
 
     font: {
-      size: 1.875em;
+      size: 1.125em;
       family: $alternate-font;
       weight: 400;
     }
@@ -46,7 +45,42 @@
 
     border: none;
 
-    padding-left: 14px;
-    padding-bottom: 12px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+  }
+
+  &__input--number::-webkit-outer-spin-button,
+  &__input--number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+  }
+
+  input[type=number] {
+    -moz-appearance:textfield;
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .form-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__label {
+      font: {
+        size: 1.402em;
+      }
+
+      margin-right: 15px;
+    }
+
+    &__input {
+      font: {
+        size: 1.875em;
+      }
+
+      padding-left: 14px;
+      padding-bottom: 12px;
+    }
   }
 }

@@ -10,36 +10,13 @@
 
   &__label {
     font: {
-      size: 1.313em;
+      size: 1.125em;
       family: $main-font;
       weight: 700;
     }
 
-    line-height: 25px;
+    line-height: 20px;
     color: $text-black;
-  }
-
-  &__label--eyes {
-    position: relative;
-  }
-
-  &__text--first {
-    position: absolute;
-
-    bottom: -1px;
-    right: -97px;
-  }
-
-  &__text--second {
-    position: absolute;
-    bottom: -2px;
-    right: -132px;
-  }
-
-  &__text--third {
-    position: absolute;
-    bottom: -3px;
-    right: -157px;
   }
 
   &__link {
@@ -67,5 +44,40 @@
 
   &__input--eng:checked + label::after {
     @include checkbox-checked-eng;
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .inner-item {
+    &__label {
+      font: {
+        size: 1.313em;
+      }
+
+      line-height: 25px;
+    }
+
+    &__label--eyes {
+      position: relative;
+    }
+
+    &__text--first {
+      position: absolute;
+
+      bottom: -1px;
+      right: -97px;
+    }
+
+    &__text--second {
+      position: absolute;
+      bottom: -2px;
+      right: -132px;
+    }
+
+    &__text--third {
+      position: absolute;
+      bottom: -3px;
+      right: -157px;
+    }
   }
 }

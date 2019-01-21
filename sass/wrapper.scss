@@ -1,11 +1,18 @@
 .wrapper {
   width: 100%;
-  max-width: 1000px;
+  max-width: auto;
 
   margin: 0 auto;
-  padding: 61px 112px;
+  padding: 20px 10px;
 
   background-image: url('../img/pattern.png');
   background-repeat: repeat;
   background-position: top left;
+}
+
+@media only screen and (min-width: $laptop) {
+  .wrapper {
+    max-width: 1000px;
+    padding: 61px 112px;
+  }
 }

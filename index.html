@@ -46,7 +46,7 @@
 						</li>
 						<li class="form-list__item form-item">
 							<label class="form-item__label" for="date">Год&nbsp;рождения</label>
-							<input class="form-item__input" type="number" name="date" id="date" value="1989" disabled />
+							<input class="form-item__input form-item__input--number" type="number" name="date" id="date" value="1989" disabled />
 						</li>
 						<li class="form-list__item form-item">
 							<label class="form-item__label" for="place">Место&nbsp;жительства</label>
@@ -212,7 +212,7 @@
 				<h2 class="main-about__title">Расскажите о себе словами</h2>
 				<p class="main-about__description">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</p>
 				<form class="main-about__form about-form" method="post" action="#">
-					<div class="about-form__tech"><textarea class="about-form__textarea" id="textarea" rows="2">Всем привет, меня зовут Артур. Вакансия в CSSSR привлекла меня концепцией работы и стеком технологий + очень заинтересовала система сборки проектов от CSSSR. Хочется работать удаленно, развиваться по всем фронтам, участвовать в хороших проектах. В задании, вроде бы, удалось предусмотреть всё, на мой скромный взгляд, но пределу совершенства нет. P.S: пункто про глазомер не совсем понял, реализовал так, как показалось нужным и по макету.</textarea></div>
+					<div class="about-form__tech"><textarea class="about-form__textarea" id="textarea" rows="2">Привет, меня зовут Артур. Вакансия в CSSSR привлекла меня концепцией работы и стеком технологий + очень заинтересовала система сборки проектов от CSSSR. Хочется работать удаленно, развиваться по всем фронтам, участвовать в хороших проектах. В задании, вроде бы, удалось предусмотреть всё, но пределу совершенства нет. P.S: пункт про глазомер не совсем понял, реализовал так, как показалось нужным по макету.</textarea></div>
 					<button class="about-form__submit visually-hidden" type="submit">Сохранить</button>
 				</form>
 			</section>
@@ -248,8 +248,8 @@
 			<section class="footer__date">
 				<h2 class="footer__title visually-hidden">Введите дату заполнения дела</h2>
 				<form class="footer__form footer-form" method="post" action="#">
-					<label class="footer-form__label" for="date">Дата&nbsp;заполнения</label>
-					<input class="footer-form__input" type="date" name="date" id="date" value="2019-01-19" disabled/>
+					<label class="footer-form__label" for="datetime">Дата&nbsp;заполнения</label>
+					<input class="footer-form__input" type="text" name="date" id="datetime" value="2019-01-19" disabled/>
 				</form>
 			</section>
 		</footer>

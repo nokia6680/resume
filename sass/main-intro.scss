@@ -6,18 +6,32 @@
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 
   &__title {
-    width: 221px;
-    height: 118px;
+    width: 110.5px;
+    height: 59px;
 
     background-image: url('../img/project.svg');
-    background-size: 221px 118px;
+    background-size: 110.5px 59px;
     background-repeat: no-repeat;
     background-position: top center;
 
     margin: 0;
-    margin-left: -43px;
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .main-intro {
+    margin-bottom: 50px;
+
+    &__title {
+      width: 221px;
+      height: 118px;
+
+      background-size: 221px 118px;
+
+      margin-left: -43px;
+    }
   }
 }
